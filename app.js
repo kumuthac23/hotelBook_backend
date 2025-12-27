@@ -61,6 +61,11 @@ app.use("/api/auth", authRouter);
 app.use("/api/hotels", hotelRouter);
 app.use("/api/bookings", bookingRouter);
 
+// Handle favicon requests silently
+app.get("/favicon.ico", (req, res) => {
+  res.status(204).send();
+});
+
 //these middleware should at last but before error handlers
 app.use("*", (req, res, next) => {
   const err = new Error(`Can't find ${req.originalUrl} on the server`);
