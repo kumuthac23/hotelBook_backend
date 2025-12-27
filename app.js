@@ -63,7 +63,9 @@ app.use("/api/bookings", bookingRouter);
 
 // Root route
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Hotel Booking API is running", status: "ok" });
+  res
+    .status(200)
+    .json({ message: "Hotel Booking API is running", status: "ok" });
 });
 
 // Handle favicon requests silently
