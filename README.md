@@ -2,8 +2,8 @@
 
 **Setup Instructions**
 
-- **Prerequisites:** Node.js (>=14), npm, a MongoDB connection (Atlas).
-- **Environment variables:** create a `.env` file in the backend root with at least:
+- **Prerequisites:** Node.js, npm, a MongoDB connection (Atlas).
+- **Environment variables:** create a `.env` file in the backend root with:
 
   - `CONNECTION_STRING` — MongoDB connection
   - `JWT_SECRET` — JWT signing secret
